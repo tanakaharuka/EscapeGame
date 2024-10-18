@@ -1,0 +1,31 @@
+.bluebtn{
+    background-color: skyblue;
+    border-width: 1px;
+}
+
+.top{
+    height: 600px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url(redRoom.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: lighten;
+}
+#title{
+    font-size: 5em;
+    margin: 50px;
+}
+
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.head h1{
+}
+.head button{
+    margin-top: auto;
+    height: 3em;
+}
