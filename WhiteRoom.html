@@ -2,13 +2,21 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>部屋白</title>
+    <title>脱出ゲーム｜白い部屋</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="head">
         <h1>脱出ゲーム</h1>
         <button id="pose">ポーズ</button>
+        <button id="return">やめる</button>
+        <form name="totop" action="index.html"></form>
+        <script>
+            const returnbtn = document.querySelector("#return");
+            returnbtn.addEventListener("click", () =>{
+                if(confirm("トップページに戻りますか？")) document.totop.submit();
+            });
+        </script>
     </div>
     <hr>
     <div>
@@ -38,10 +46,9 @@
     <div>
         <textarea rows="3" cols="30" disabled></textarea>
         <form method="post">
-            <input type="submit" class="bluebtn" formaction="BuleRoom.html" value="←">
-            <input type="submit" class="greenbtn" formaction="GreenRoom.html" value="↓">
-            <input type="submit" class="redbtn" formaction="RedRoom.html" value="→">
-            <!--<button class="greenbtn"><strong>↓</strong></button>-->
+            <button type="submit" class="bluebtn" formaction="BuleRoom.html">←</button>
+            <button type="submit" class="greenbtn" formaction="GreenRoom.html">↓</button>
+            <button type="submit" class="redbtn" formaction="RedRoom.html">→</button>
         </form>
     </div>
     <script src="mouseXY.js"></script>
