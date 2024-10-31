@@ -21,11 +21,15 @@
     <hr>
     <div>
         <h2>白の部屋</h2>
-        <img src="redRoom.jpg" alt="redroom">
+        <!-- 画像表示セクション -->
+        <div>
+            <div id="room" style="height: 180px; background-color: red;"></div>
+            <p>x:<span class="xecho"></span>   y:<span class="yecho"></span></p>
+        </div>
     </div>
-    <hr>
+
     <div>
-        <!--アイテム欄？-->
+        <!--アイテム欄-->
         <table border="1">
             <tr><td>花</td><td>鍵</td></tr>
         </table>
@@ -33,12 +37,13 @@
     <hr>
     <div>
         <textarea rows="3" cols="30" disabled></textarea>
-        <form method="get">
-            <input type="submit" class="bluebtn" formaction="roomb.html" value="←">
-            <input type="submit" class="greenbtn" formaction="roomb.html" value="↓">
-            <input type="submit" class="redbtn" formaction="roomb.html" value="→">
+        <form method="post">
+            <input type="submit" class="bluebtn" formaction="BuleRoom.html" value="←">
+            <input type="submit" class="greenbtn" formaction="GreenRoom.html" value="↓">
+            <input type="submit" class="redbtn" formaction="RedRoom.html" value="→">
             <!--<button class="greenbtn"><strong>↓</strong></button>-->
         </form>
     </div>
+    <script src="mouseXY.js"></script>
 </body>
 </html>
