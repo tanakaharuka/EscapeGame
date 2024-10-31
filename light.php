@@ -28,9 +28,21 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>脱出ゲーム</title>
+    <title>脱出ゲーム｜白い部屋</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="head">
+        <h1>脱出ゲーム</h1>
+        <button id="pose">ポーズ</button>
+    </div>
+    <hr>
+    <div>
+        <h3>ポーズメニュー</h3>
+        <button type="submit" formaction="top.html">ホーム</button>
+        <button type="button">戻る</button>
+    </div>
+    <hr>
     <div>
         <!--画像表示-->
         <?php
@@ -62,6 +74,19 @@
             <input type="hidden" value="<?php echo $greenlamp ?>" name="green">
             <input type="hidden" value="<?php echo $redlamp ?>" name="red">
             <input type="hidden" value="<?php echo $bluelamp ?>" name="blue">
+        </form>
+    </div>
+    <div>
+        <!--アイテム欄-->
+        <table border="1">
+            <tr><td>花</td><td>鍵</td></tr>
+        </table>
+    </div>
+    <hr>
+    <div>
+        <textarea rows="3" cols="30" disabled></textarea>
+        <form method="post">
+            <button type="submit" class="whitebtn" formaction="WhiteRoom.html">戻る</button>
         </form>
     </div>
 </body>
